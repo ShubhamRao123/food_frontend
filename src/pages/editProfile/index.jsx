@@ -5,7 +5,8 @@ import Navbar from "../../component/navbar";
 import styles from "./editProfile.module.css";
 
 // Use environment variable for the backend URL
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+// const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+const BACKEND_URL = "https://food-backend-eb7q.onrender.com";
 
 function EditProfile() {
   const [userDetails, setUserDetails] = useState({

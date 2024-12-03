@@ -3,7 +3,8 @@ import { useNavigate } from "react-router-dom"; // Import useNavigate
 import Footer from "../../component/footer";
 import Navbar from "../../component/navbar";
 import styles from "./profile.module.css";
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+// const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+const BACKEND_URL = "https://food-backend-eb7q.onrender.com";
 
 function Profile() {
   const [userDetails, setUserDetails] = useState({

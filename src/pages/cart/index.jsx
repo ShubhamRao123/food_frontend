@@ -10,7 +10,8 @@ import {
 import styles from "./cart.module.css";
 import toast from "react-hot-toast";
 
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+// const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+const BACKEND_URL = "https://food-backend-eb7q.onrender.com";
 
 const Cart = () => {
   const { items, totalPrice } = useSelector((state) => state.cart);

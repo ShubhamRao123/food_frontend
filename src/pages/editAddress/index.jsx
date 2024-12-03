@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import Navbar from "../../component/navbar";
 import Footer from "../../component/footer";
 import styles from "./editAddress.module.css";
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+// const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+const BACKEND_URL = "https://food-backend-eb7q.onrender.com";
 import { useNavigate } from "react-router-dom";
 import Address from "../address";
 

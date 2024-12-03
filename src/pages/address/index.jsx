@@ -4,7 +4,8 @@ import Navbar from "../../component/navbar";
 import styles from "./address.module.css";
 import { useNavigate } from "react-router-dom";
 
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+// const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+const BACKEND_URL = "https://food-backend-eb7q.onrender.com";
 
 function Address() {
   const [addresses, setAddresses] = useState([]);

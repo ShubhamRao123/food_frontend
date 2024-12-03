@@ -5,7 +5,8 @@ import styles from "./shareCart.module.css";
 import Navbar from "../../component/navbar";
 import Footer from "../../component/footer";
 
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+// const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+const BACKEND_URL = "https://food-backend-eb7q.onrender.com";
 
 const SharedCart = () => {
   const { shareToken } = useParams();

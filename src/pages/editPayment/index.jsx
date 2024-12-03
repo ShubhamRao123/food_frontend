@@ -4,7 +4,8 @@ import { useNavigate } from "react-router-dom"; // Import useNavigate
 import styles from "./editPayment.module.css";
 import Profile from "../profile";
 
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+// const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+const BACKEND_URL = "https://food-backend-eb7q.onrender.com";
 
 function EditPayment() {
   const [userDetails, setUserDetails] = useState({
