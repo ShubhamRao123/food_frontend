@@ -73,7 +73,7 @@ function EditPayment() {
 
       alert("Card added successfully!");
     } catch (error) {
-      console.error("Error saving card:", error);
+      // console.error("Error saving card:", error);
       alert("Failed to save card details.");
     }
   };
