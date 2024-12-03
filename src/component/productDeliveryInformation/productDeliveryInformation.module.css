@@ -1,0 +1,101 @@
+.information {
+    display: flex;
+    justify-content: space-between;
+    
+    background-color: #fbfbfb;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 50px 100px;
+  }
+  
+  .deliveryInformation,
+  .contactInformation,
+  .operationTimings {
+    flex: 1;
+    padding: 25px 80px;
+    background-color: white;
+  }
+  
+  
+  .operationTimings {
+    border-left: 4px solid #023047;
+    background-color: #001122;
+    color: white;
+  }
+  
+  .sectionTitle {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 35px;
+    display: flex;
+    align-items: center;
+  
+  }
+  
+  .icon {
+    font-size: 20px;
+    margin-right: 8px;
+  }
+  
+  .infoList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .infoList li {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 46px;
+  }
+  
+  .infoList li span{
+    font-weight: 700;
+  }
+  
+  .sectionTitle2P1{
+    line-height: 56px;
+    width: 92%;
+  }
+  
+  .sectionTitle2P2{
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+  }
+  
+  .sectionTitle2P2 strong{
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  .sectionTitle2 p{
+    font-size: 24px;
+    font-weight: 400;
+  }
+  
+
+  .information {
+    display: flex;
+    justify-content: space-between;
+    
+    background-color: #fbfbfb;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 50px 100px;
+  }
+  
+
+  @media (max-width: 500px) {
+    .information {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      background-color: #fbfbfb;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 95%;
+      margin-left: 19px;
+    }
+  }

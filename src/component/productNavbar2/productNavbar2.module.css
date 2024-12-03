@@ -1,0 +1,57 @@
+.subNavbar2{
+    display: flex
+  ;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      height: 70px;
+      max-width: 100%;
+      margin-right: 62px;
+      margin-left: 80px;
+      margin-bottom: 30px;
+  }
+  
+  
+  .logoh2 {
+    width: 185%; 
+    height: auto;
+    margin-right: 35px;
+    font-size: 32px;
+    font-weight: 700  ;
+    /* margin-left: 46px; */
+  }
+  
+  .navLinks2 {
+    flex: 4;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+  
+  .searchContainer {
+    position: relative; 
+    display: flex;
+    align-items: center; 
+    margin-right: 22px;
+  }
+  
+  .searchIcon {
+    position: absolute;
+    left: 15px; 
+    width: 20px;
+    height: 20px;
+    pointer-events: none; 
+  }
+  
+  .navItem2 {
+    color: #03081F;
+    background-color: #ffffff;
+    width: 300px; 
+    height: 45px;
+    border-radius: 80px;
+    border: 1px solid #03081F;
+    font-weight: 600;
+    font-size: 18px;
+    padding-left: 45px; 
+  }
+  

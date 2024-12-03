@@ -1,0 +1,194 @@
+
+.productCoverMargin{
+    margin-bottom: 75px;
+  }
+  
+  .productCoverContainer {
+    height: 477px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font-family: "Poppins", sans-serif;
+    margin: 0 100px;
+    margin-left: 79px;
+    border-radius: 35px;
+    position: relative; 
+    overflow: hidden; 
+  }
+  
+  
+  
+  .coverContent {
+    text-align: left; 
+    color: #ddd;
+    position: absolute;
+    z-index: 2;
+    left: 75px;
+  }
+  
+  .coverContentSpan{
+    position: absolute;
+    font-family: "Poppins", sans-serif;
+    z-index: 2;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .coverContent h2{
+    font-family: "Poppins", sans-serif;
+    font-size: 54px;
+    font-weight: 600;
+    color: #FFFFFF;
+  }
+  
+  .infoContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 38%;
+    position: absolute;
+    z-index: 2;
+    top: 340px;
+    left: 75px;
+  }
+  
+  .infoBox {
+    display: flex;
+    align-items: center;
+    padding: 14px 36px;
+    border: 1px solid #FFFFFF; 
+    border-radius: 35px; 
+    color: #FFFFFF; 
+    font-family: "Poppins", sans-serif; 
+    font-size: 16px; 
+    font-weight: 500; 
+    cursor: pointer;
+  }
+  
+  .infoIcon {
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 20px; /* Icon size */
+  }
+  
+  
+  
+  
+  .backgroundImage {
+    position: absolute; 
+    width: 99%; 
+    height: 100%; 
+    z-index: 0; 
+  }
+  
+  .backgroundImage img {
+    width: 98%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px; 
+    opacity: 0.5;
+  }
+  
+  .backgroundImageColor{
+    height: 477px;
+    width: 98%;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(3, 8, 31, 0.9); 
+  }
+  
+  .productCoverContainerSideImage{
+    position: absolute;
+    z-index: 2;
+    right: 95px;
+    top: 56px;
+  }
+  
+  .productCoverContainerTopImage{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 3;
+    top: 59%;
+    right: 35%;
+  }
+  
+  .productTimingContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 38%;
+    margin-left: 99px;
+    margin-top: -11px;
+    z-index: 3;
+    position: absolute;
+  }
+  
+  .productTiming {
+    display: flex;
+    align-items: center;
+    padding: 14px 36px;
+    border-radius: 10px; 
+    color: #FFFFFF; 
+    background-color: #FC8A06;
+    font-family: "Poppins", sans-serif; 
+    font-size: 18px; 
+    font-weight: 600; 
+    
+    
+  }
+  
+  .productTimingIcon {
+    margin-right: 8px; 
+    font-size: 20px; 
+  }
+  
+
+  @media (max-width: 500px) {
+    .productTimingContainer{
+      display: none;
+    }
+
+    
+
+    .productCoverContainer {
+      height: 755px;
+      width: 428px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 20px;
+      font-family: "Poppins", sans-serif;
+      margin: 0 100px;
+      margin-left: 12px;
+      border-radius: 35px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .backgroundImageColor{
+      height: 751px;
+      width: 97%;
+      position: absolute;
+      z-index: 1;
+      background-color: rgba(3, 8, 31, 0.9); 
+    }
+    
+
+    .productCoverContainerSideImage{
+      position: absolute;
+      z-index: 1;
+      right: -10px;
+      top: 31%;
+      left: 1%;
+    }
+
+
+
+    
+    
+    
+  }
+  
+  

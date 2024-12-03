@@ -1,0 +1,51 @@
+
+.offer {
+    width: 90%;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    margin-left: 100px; 
+    margin-right: 100px;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    gap: 80px;
+  }
+  
+  .offerItem {
+    width: 503px; 
+    height: 353px;
+    border-radius: 12px;
+  }
+  
+  .offerItem img {
+    width: 107%;
+    height: 100%;
+    border-radius: inherit; 
+    object-fit: cover; 
+  }
+
+  @media (max-width: 500px) {
+    .offer {
+      width: 90%;
+      margin-top: 40px;
+      margin-bottom: 50px;
+      margin-left: 100px; 
+      margin-right: 100px;
+      padding: 0;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 80px;
+    }
+
+    .offerItem {
+      width: 75%;
+      height: 100%;
+      border-radius: inherit;
+      object-fit: cover;
+      margin-left: -75px;
+    }
+    
+  }

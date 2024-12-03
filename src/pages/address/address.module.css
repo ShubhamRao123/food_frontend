@@ -1,0 +1,177 @@
+.container{
+    background-color: #FFFFFF;
+}
+
+
+.addAddress {
+  width: 23%;
+  height: 256px;
+  border: 2px dashed #AFAFAF;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  position: relative;
+  margin-bottom: 100px;
+  margin-top: 27px;
+  margin-left: 100px;
+  cursor: pointer;
+    
+  }
+  
+  .circle {
+    width: 50px;
+    height: 50px;
+    background-color: #fff7e6; 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .plus {
+    font-size: 24px;
+    color: #ff8800; 
+  }
+  
+  .text {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+
+  .container {
+    background-color: #ffffff;
+  }
+  
+  .addressContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start; 
+    gap: 20px; 
+    padding: 20px;
+  }
+  
+
+  .addressList {
+    display: flex; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+    padding: 20px;
+    width: 100%; 
+    justify-content: flex-start; 
+  }
+  
+  .addressCard {
+    width: calc(25% - 20px); 
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .defaultBadge {
+    background-color: #ffe0b3;
+    color: #ff8800;
+    font-size: 12px;
+    padding: 3px 8px;
+    border-radius: 12px;
+    position: absolute;
+    top: 33%;
+    right: 60%;
+  }
+  
+  .actions {
+    margin-top: 20px;
+  }
+  
+  .edit, .remove {
+    font-size: 14px;
+    color: #ff8800;
+    cursor: pointer;
+    margin-right: 15px;
+  }
+  
+  .remove {
+    color: #ff0000;
+  }
+  
+  .edit:hover, .remove:hover {
+    text-decoration: underline;
+  }
+  
+
+  @media (max-width: 500px) {
+    .addressContainer {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start; 
+      flex-direction: column;
+      gap: 20px; 
+      padding: 20px;
+      width: 100%;
+      margin-left: -12px;
+    }
+
+    .addAddress {
+      width: 83%;
+      height: 256px;
+      border: 2px dashed #AFAFAF;
+      background-color: #FFFFFF;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      position: relative;
+      margin-bottom: 100px;
+      margin-top: 27px;
+      margin-left: 26px;
+      cursor: pointer;
+        
+      }
+
+    .addressList {
+      display: flex; 
+      gap: 20px; 
+      flex-wrap: wrap; 
+      flex-direction: column;
+      padding: 20px;
+      width: 100%; 
+      justify-content: flex-start; 
+    }
+    
+    .addressCard {
+      width: 100%;
+      border: 1px solid #dddddd;
+      border-radius: 8px;
+      padding: 20px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .defaultBadge {
+      background-color: #ffe0b3;
+      color: #ff8800;
+      font-size: 12px;
+      padding: 3px 8px;
+      border-radius: 12px;
+      position: absolute;
+      top: 82%;
+      right: 22%;
+    }
+    
+  }

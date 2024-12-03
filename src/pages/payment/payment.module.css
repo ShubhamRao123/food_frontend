@@ -1,0 +1,336 @@
+.container{
+    background-color: #FFFFFF;
+    font-family: "Poppins", sans-serif
+  }
+
+
+
+
+  .logoContainerCart {
+    display: flex; /* Enable flexbox */
+    align-items: center; /* Align items vertically centered */
+    gap: 10px; /* Add spacing between the image and text */
+    background-color: #FFFFFF;
+    margin-left: 87px;
+    margin-top: 60px;
+  }
+  
+  .logoContainerCart img {
+    width: 39px; /* Adjust image size */
+    height: 39px;
+    margin-bottom: 100px;
+  }
+  
+  .logoh2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0; /* Remove default margins */
+    color: #000; /* Text color */
+    margin-bottom: 100px;
+  }
+
+
+  .paymentContainer {
+    display: flex;
+    gap: 20px;
+    background-color: #FFFFFF;;
+    padding: 20px;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    margin: 0 100px;
+  }
+  
+  /* Left Section: Payment Options */
+  .optionsContainer {
+    flex: 1;
+    background-color: #FFFFFF;;
+    border: 1px solid #FFFFFF;;
+    border-radius: 10px;
+    padding: 15px;
+    
+  }
+  
+  .walletHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px dashed #FFFFFF;
+    padding: 17px;
+    border: 1px solid #FFE8CE;
+    border-radius: 47px;
+    cursor: pointer;
+}
+
+
+.walletIcon {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px; 
+    padding: 1px 1px;
+    border-radius: 12px;
+    background-color: #FFE8CE;
+
+    border: 1px solid #000000;
+    /* Adds space between the icon and wallet details */
+}
+
+.walletDetails {
+    flex-grow: 1; /* Ensures wallet details take up available space */
+}
+
+.walletDetails h3 {
+    font-size: 18px;
+    margin: 0;
+    text-align: left;
+}
+
+.walletDetails p {
+    font-size: 14px;
+    color: #777;
+    margin: 0;
+}
+
+.arrowIcon {
+    width: 16px;
+    height: 16px;
+    margin-left: auto; /* Pushes the arrow to the far right */
+}
+
+  
+.paymentMethods {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.method {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #FFFFFF;
+  font-size: 16px;
+  border: 1px solid #FFE8CE;
+  border-radius: 27px;
+  font-weight: 400;
+  gap: 5px;
+  color: #000000;
+  margin-bottom: 19px;
+  cursor: pointer;
+  
+}
+
+.icon {
+  width: 26px;
+  height: 26px;
+  background-color: #FFE8CE;
+  color: #FC8A06;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  margin-right: 10px;
+  padding: 17px;
+}
+
+.radio {
+  margin-left: 80%;
+  color: #83858A;
+  width: 24px;
+  height: 24px;
+}
+  
+.radio2{
+  margin-left: 85%;
+  color: #83858A;
+  width: 24px;
+  height: 24px;
+}
+  
+.radio3{
+  margin-left: 86%;
+  color: #83858A;
+  width: 24px;
+  height: 24px;
+}
+
+  .addCardButton {
+    background-color: transparent;
+    border: 1px solid #FFE8CE;
+    color: #000000;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: left;
+    padding: 10px;
+    font-weight: 400;
+    margin-top: 10px;
+    border-radius: 27px;
+    cursor: pointer;
+  }
+  
+  /* Right Section: Payment Summary */
+  .summaryContainer {
+    width: 40%;
+    height: 151px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .amountRow {
+    display: flex; /* Enable flexbox layout */
+    justify-content: space-between; /* Space out the child elements */
+    align-items: center; /* Align items vertically */
+    margin-bottom: 15px; /* Add spacing below the row */
+  }
+  
+  .amountRow p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #83858A;
+    margin: 0;
+    text-align: left; /* Optional for clarity */
+  }
+  
+  .amountRow h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+    margin: 0;
+    text-align: right; /* Optional for clarity */
+  }
+  
+  .payButton {
+    background-color: #FC8A06;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    width: 100%;
+    font-weight: 600;
+  }
+  
+  @media (max-width: 500px) {
+
+  .paymentContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #FFFFFF;;
+    padding: 20px;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    margin: 0 100px;
+    width: 61%;
+  }
+
+  .optionsContainer {
+    flex: 1;
+    background-color: #FFFFFF;;
+    border: 1px solid #FFFFFF;;
+    border-radius: 10px;
+    padding: 15px;
+    width: 50;
+    margin-left: -124px;
+  }
+  
+  .walletHeader {
+    display: flex;
+    width: 130%;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px dashed #FFFFFF;
+    padding: 17px;
+    border: 1px solid #FFE8CE;
+    border-radius: 47px;
+    cursor: pointer;
+}
+
+.paymentMethods {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+  width: 129%;
+}
+
+.method {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #FFFFFF;
+  font-size: 16px;
+  border: 1px solid #FFE8CE;
+  border-radius: 27px;
+  font-weight: 400;
+  gap: 5px;
+  color: #000000;
+  margin-bottom: 19px;
+  cursor: pointer;
+  
+}
+
+.radio {
+  margin-left: 55%;
+  color: #83858A;
+  width: 24px;
+  height: 24px;
+}
+  
+.radio2{
+  margin-left: 66%;
+  color: #83858A;
+  width: 24px;
+  height: 24px;
+}
+  
+.radio3{
+  margin-left: 69%;
+  color: #83858A;
+  width: 24px;
+  height: 24px;
+}
+
+.addCardButton {
+  background-color: transparent;
+  border: 1px solid #FFE8CE;
+  color: #000000;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: left;
+  padding: 10px;
+  font-weight: 400;
+  margin-top: 10px;
+  border-radius: 27px;
+  cursor: pointer;
+  width: 129%;
+}
+
+.summaryContainer {
+  width: 168%;
+  height: 151px;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  margin-left: -102px;
+}
+
+.logoContainerCart {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #FFFFFF;
+  margin-left: 87px;
+  margin-top: 60px;
+  margin-left: 10px;
+  margin-bottom: -87px;
+}
+
+}

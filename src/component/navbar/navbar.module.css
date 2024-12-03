@@ -1,0 +1,408 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background-color: #FFFFFF;  */
+}
+
+.container{
+  background-color: #FFFFFF;
+}
+
+/* Navbar styling */
+.navbar {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FAFAFA; 
+  padding: 10px 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+  margin: 0 100px;
+  border-radius: 10px;
+}
+
+.leftText {
+  font-size: 15px;
+  font-weight: 500;
+  color: #03081F;
+}
+
+.leftText span {
+  margin-right: 5px;
+}
+
+.promo {
+  color: #fc8a06;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.centerRightText {
+  font-size: 15px;
+  font-weight: 500;
+  color: #03081F;
+  text-align: center;
+  flex-grow: 1; 
+  display: flex;
+  justify-content: center;
+}
+
+.a4{
+  text-decoration: underline;
+  text-decoration-style: solid;
+  margin: 0 3px;
+}
+
+.navLocation{
+  color: #fc8a06;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 10px;
+  text-decoration: underline;
+}
+
+.cartContainer {
+  display: flex;
+  align-items: center;
+}
+
+
+.cartButton {
+  width: 378px;
+  height: 70px;
+  border-radius: 0px 0px 12px 12px;
+  border-width: 1px 0px 0px 0px;
+  border-style: solid;
+  border-color: #ccc;
+  opacity: 1;
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+  background-color: #028643;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 100px;
+  padding: 0 15px; 
+  box-sizing: border-box; 
+}
+
+.cartIcon {
+  width: 43px;
+  height: 43px;
+  margin-right: 8px; 
+}
+
+.spanCart {
+  line-height: 1;
+  font-size: 16px; 
+  font-weight: 600;
+  margin-right: auto; 
+}
+
+.downArrow {
+  width: 38px;
+  height: 38px;
+  margin-left: auto; 
+}
+
+
+
+.subNavbarContainer {
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 50px;
+
+  padding: 0; 
+  box-sizing: border-box; 
+}
+
+
+
+
+.subNavbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  height: 70px;
+  max-width: 100%;
+  margin-right: 75px;
+  margin-left: 70px;
+  
+}
+
+
+.logoContainer {
+  flex: 1;
+}
+
+.logo {
+  width: 215px; 
+  height: auto;
+  margin-right: 35px;
+}
+
+.navLinks {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.navItem {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.navItem:hover {
+  color: #FFFFFF; 
+  background-color: #FC8A06; 
+  width: 155px;
+  height: 45px;
+  border-radius: 80px; 
+}
+
+
+
+.authButtons {
+  flex: 1;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.authButton {
+  background-color: #000000;
+  color: white;
+  width: 250px;
+  height: 65px; 
+  border: 1px solid white;
+  border-radius: 65px;
+  padding: 0 45px; 
+  display: flex; 
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.authButtonSpan {
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.authButtonIcon {
+  width: 30.97px; 
+  height: 27px; 
+  border-radius: 1px 0px 0px 0px; 
+  opacity: 1; 
+}
+
+
+
+
+/* Media Query for Mobile View */
+
+
+
+@media (max-width: 480px) {
+  .leftText {
+    display: none; /* Hide left text */
+  }
+
+  .centerRightText {
+    display: none; /* Hide center text */
+  }
+
+  .navLinks {
+    display: none; /* Hide navigation links */
+  }
+
+  .container{
+    position: relative;
+  }
+
+  .navbar{
+    display: inline;
+  }
+
+  .logoContainer img {
+    position: absolute;
+    width: 50%;
+    height: 38px;
+    margin-top: -52px;
+    margin-left: -213px;
+    top: 69px;/* Align logo in the center */
+  }
+
+  .authButton {
+    position: absolute;
+    width: 50%;
+    height: 63px;
+    left: 1px;
+    top: 92px;
+    border-radius: 0px;
+    padding: 0 10px;
+    margin: 0;
+    display: inline-flex;
+    justify-content: flex-start;
+  }
+
+  .cartButton {
+    width: 50%;
+    height: 61px;
+    margin: 0;
+    display: inline-flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 92px;
+  }
+
+  .authButton,
+  .cartButton {
+    align-items: center; /* Center vertically */
+    margin: 0; /* Ensure no extra margins */
+    padding: 0 10px;
+  }
+
+  .subNavbarContainer {
+    display: flex;
+    flex-direction: column; /* Stack the logo on top */
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .subNavbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Add spacing between items */
+  }
+
+  .authButtons {
+    display: flex;
+    justify-content: space-between; /* Push buttons to sides */
+    width: 100%; /* Stretch across screen width */
+    padding: 0 10px;
+    margin-top: 10px;
+  }
+
+  .cartContainer {
+    display: flex;
+    justify-content: space-between; /* Space out buttons */
+    width: 100%; /* Full width of the screen */
+    padding: 0 10px;
+  }
+}
+
+/* Media Query for Tablets (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .leftText {
+    display: none; /* Hide left text */
+  }
+
+  .centerRightText {
+    display: none; /* Hide center text */
+  }
+
+  .navLinks {
+    display: none; /* Hide navigation links */
+  }
+
+  .container{
+    position: relative;
+  }
+
+  .navbar{
+    display: inline;
+  }
+
+  .logoContainer img {
+    position: absolute;
+    width: 161px;
+    height: 38px;
+    margin-top: -52px;
+    margin-left: -213px;
+    top: 69px;/* Align logo in the center */
+  }
+
+  .authButton {
+    position: absolute;
+    width: 50%;
+    height: 63px;
+    left: 1px;
+    top: 92px;
+    border-radius: 0px;
+    padding: 0 10px;
+    margin: 0;
+    display: inline-flex;
+    justify-content: flex-start;
+  }
+
+  .cartButton {
+    width: 50%;
+    height: 61px;
+    margin: 0;
+    display: inline-flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 92px;
+  }
+
+  .authButton,
+  .cartButton {
+    align-items: center; /* Center vertically */
+    margin: 0; /* Ensure no extra margins */
+    padding: 0 10px;
+  }
+
+  .subNavbarContainer {
+    display: flex;
+    flex-direction: column; /* Stack the logo on top */
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .subNavbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Add spacing between items */
+  }
+
+  .authButtons {
+    display: flex;
+    justify-content: space-between; /* Push buttons to sides */
+    width: 100%; /* Stretch across screen width */
+    padding: 0 10px;
+    margin-top: 10px;
+  }
+
+  .cartContainer {
+    display: flex;
+    justify-content: space-between; /* Space out buttons */
+    width: 100%; /* Full width of the screen */
+    padding: 0 10px;
+  }
+}

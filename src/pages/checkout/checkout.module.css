@@ -1,0 +1,356 @@
+.container{
+    background-color: #FFFFFF;
+  }
+
+  .logoh2 {
+    width: 185%; 
+    height: auto;
+    margin-right: 35px;
+    font-size: 32px;
+    font-weight: 700  ;
+    margin-left: 96px;
+    background-color: #FFFFFF;
+  }
+
+
+  
+
+/* Restaurant Css */
+.restaurantCategoryContainer{
+    width: 100%;
+    margin: 0 100px;
+  }
+  .restaurantContainer {
+    
+    padding: 16px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    margin-bottom: 35px;
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
+  
+  .restaurantNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    height: 70px;
+    max-width: 100%;
+    margin-right: 62px;
+    margin-left: 80px;
+  }
+  
+  .restaurantNavLogo{
+    width: 185%; 
+    height: auto;
+    margin-right: 35px;
+    font-size: 32px;
+    font-weight: 700  ;
+    margin-left: -22px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px;
+    margin: 0 74px;
+  }
+  
+  .card {
+    cursor: pointer;
+    text-align: center;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    border-radius: 8px; 
+    overflow: hidden; 
+    background-color: #ffffff; 
+    width: 94%;
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px);
+  }
+  
+  .imageContainer {
+    width: 100%;
+    height: 200px; 
+    overflow: hidden;
+    background-color: #FFFFFF;
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .name {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    color: #FFFFFF; 
+    background-color: #FC8A06; 
+    padding: 10px 0;
+    margin: 0; 
+    text-transform: capitalize; 
+  }
+  
+
+  
+   .cartDetails {
+    border: 1px solid #202938;
+    padding: 1rem;
+    border-radius: 28px;
+    width: 50%;
+    margin: 0 100px;
+  }
+  
+  .cartItems {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .cartItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #202938;
+    height: 90px;
+  }
+  
+  .itemImage {
+    width: 48px;
+    height: 48px;
+    margin-right: 1rem;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .itemDetails {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  
+  .itemHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .itemName {
+    font-size: 16px;
+    font-weight: 600;
+    color: #03081F;
+    margin-bottom: 13px;
+  }
+  
+  .itemPrice {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #28a745; 
+  }
+  
+  .itemQuantity {
+    font-size: 12px;
+    font-weight: 400;
+    color: #83858A;
+    margin: 0;
+  }
+  
+  .orderNotes {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.8rem;
+    border: 1px solid #202938;
+    border-radius: 45px;
+    font-size: 0.9rem;
+    color: #83858A;
+    resize: none;
+    font-size: 12px;
+    font-weight: 400;
+}
+  
+  
+
+  .headingTextArea{
+    margin-bottom: 0px;
+  }
+
+
+
+  .cartWrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .deliveryDetails {
+    padding: 1rem;
+    border-radius: 28px;
+    width: 35%;
+    background-color: #fff;
+    margin-right: 100px;
+  }
+
+
+  .addressSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 26px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+  .addressHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .deliveryAddress {
+    font-size: 14px;
+    font-weight: 500;
+    color: #03081F;
+    line-height: 1.5;
+  }
+  
+  .icon {
+    color: #f69b00;
+    font-size: 20px;
+  }
+  
+  .chevronIcon {
+    color: #202938;
+    font-size: 16px;
+  }
+  
+  .priceSummary {
+    margin-bottom: 20px;
+  }
+  
+  .priceRow,
+  .subtotalRow {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+    font-size: 16px;
+    font-family: 400;
+    color: #83858A;
+  }
+  
+  .subtotalRow {
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .subtotalRow span{
+    margin-top: 17px;
+  }
+
+  .subtotalRow h2{
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+  }
+  
+  .paymentButton {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    background-color: #FC8A06;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+
+  .divider {
+    width: 100%;
+    height: 1px;
+    background-color: #202938; 
+    margin: 10px 0; 
+    margin-bottom: 10px;
+  }
+
+
+
+  @media (max-width: 500px) {
+    /* Overall Wrapper */
+    .logoh2 {
+      width: 61%;
+      height: auto;
+      margin-right: 35px;
+      font-size: 26px;
+      font-weight: 700;
+      margin-left: 22px;
+      background-color: #FFFFFF;
+  }
+    
+  
+
+
+    .cartWrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+    }
+
+    .cartDetails{
+      border: 1px solid #202938;
+      padding: 1rem;
+      border-radius: 28px;
+      width: 94%;
+      margin: -2px 12px;
+    }
+
+
+    .addressSection {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2px 26px;
+      border: 1px solid #ddd;
+      border-radius: 50px;
+      margin-bottom: 20px;
+      cursor: pointer;
+      width: 328%;
+    }
+    
+
+    .priceSummary {
+      margin-bottom: 20px;
+      width: 304%;
+    }
+    
+ 
+    
+    .paymentButton {
+      display: block;
+      width: 304%;
+      padding: 29px;
+      border: none;
+      border-radius: 20px;
+      background-color: #FC8A06;
+      color: #fff;
+      font-size: 22px;
+      font-weight: bold;
+      text-align: center;
+      cursor: pointer;
+    }
+    
+    .restaurantContainer{
+      display: none;
+    }
+
+  }

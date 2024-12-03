@@ -1,0 +1,303 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background-color: #FFFFFF;  */
+}
+
+.container{
+  background-color: #FFFFFF;
+}
+
+
+/* navbar 2 */
+.subNavbar2{
+  display: flex
+;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    height: 70px;
+    max-width: 100%;
+    margin-right: 62px;
+    margin-left: 80px;
+    margin-bottom: 30px;
+}
+
+
+.logoh2 {
+  width: 185%; 
+  height: auto;
+  margin-right: 35px;
+  font-size: 32px;
+  font-weight: 700  ;
+  /* margin-left: 46px; */
+}
+
+.navLinks2 {
+  flex: 4;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.searchContainer {
+  position: relative; 
+  display: flex;
+  align-items: center; 
+  margin-right: 22px;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 15px; 
+  width: 20px;
+  height: 20px;
+  pointer-events: none; 
+}
+
+.navItem2 {
+  color: #03081F;
+  background-color: #ffffff;
+  width: 300px; 
+  height: 45px;
+  border-radius: 80px;
+  border: 1px solid #03081F;
+  font-weight: 600;
+  font-size: 18px;
+  padding-left: 45px; 
+}
+
+
+
+
+
+
+/* Restaurant Food css */
+
+
+
+
+
+.categories {
+  margin-top: 1rem;
+  margin: 0 100px;
+  /* position: relative; */
+  position: relative;
+  min-height: 100vh; /* Ensures the container spans the viewport */
+  overflow: visible; 
+}
+
+.category {
+  margin-bottom: 2rem;
+}
+
+.categoryName {
+  font-size: 44px;
+  font-weight: 700;
+  color: #FC8A06;
+  margin-bottom: 25px;
+}
+
+
+
+.foodItems {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  gap: 1rem; 
+}
+
+.foodCard {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  flex: 1 1 calc(33.33% - 1rem); 
+  box-sizing: border-box; 
+  max-width: calc(33.33% - 1rem); 
+  margin-bottom: 1rem; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+
+.foodDetails{
+  width: 46%;
+}
+.foodDetails h3{
+  font-size: 20px;
+  font-weight: 600;
+}
+.foodDetails p{
+  font-size: 14px;
+  font-weight: 400;
+}
+.foodDetails h4{
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.imageWrapper {
+  position: relative;
+}
+
+.foodImage {
+  width: 203px;
+  height: 199px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+
+
+.plusIcon {
+  position: absolute;
+  z-index: 2;
+  margin-bottom: 4px;
+  padding: 39px 44px;
+  bottom: -4px;
+  right: -12px;
+  border-radius: 42px 0;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+
+.plusIcon img {
+  width: 49px;
+  height: 49px;
+  position: absolute;
+  bottom: 8px;
+  right: 15px;
+}
+
+
+
+/* Cart */
+.cartContainer {
+
+  width: 16%;
+ 
+}
+
+
+
+/* Similar Restaurant data */
+.restaurantCategoryContainer{
+  width: 100%;
+  margin: 0 100px;
+}
+.restaurantContainer {
+  
+  padding: 16px;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  margin-bottom: 35px;
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+
+.restaurantNav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  height: 70px;
+  max-width: 100%;
+  margin-right: 62px;
+  margin-left: 80px;
+}
+
+.restaurantNavLogo{
+  width: 185%; 
+  height: auto;
+  margin-right: 35px;
+  font-size: 32px;
+  font-weight: 700  ;
+  margin-left: -22px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+  margin: 0 74px;
+}
+
+.card {
+  cursor: pointer;
+  text-align: center;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  border-radius: 8px; 
+  overflow: hidden; 
+  background-color: #ffffff; 
+  width: 94%;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px);
+}
+
+.imageContainer {
+  width: 100%;
+  height: 200px; 
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  color: #FFFFFF; 
+  background-color: #FC8A06; 
+  padding: 10px 0;
+  margin: 0; 
+  text-transform: capitalize; 
+}
+
+@media (max-width: 500px) {
+
+
+.categories {
+  margin-top: 1rem;
+  margin: 0 100px;
+  position: relative;
+  min-height: 100vh;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+}
+.foodItems {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-left: -28%;
+  width: 470%;
+}
+
+
+.subNavbar2{
+  display: none;
+  
+}
+
+
+}

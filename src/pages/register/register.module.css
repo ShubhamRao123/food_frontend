@@ -1,0 +1,234 @@
+/* Add box-sizing to standardize widths */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.formContainer {
+  width: 816px;
+  height: 1,044px;
+  position: relative;
+  margin: 32px;
+  display: flex;
+  justify-content: center;
+  opacity: 1;
+}
+
+.innerContainer {
+  width: 463px;
+  height: 598px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  opacity: 1;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #fc8a06;
+  margin-bottom: 0.5rem;
+}
+
+header h2 {
+  font-size: 1.8rem;
+  color: #0b1420;
+  margin-bottom: 1rem;
+}
+
+header p {
+  font-size: 1rem;
+  color: #313957;
+  margin-bottom: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #0b1420;
+  margin-bottom: 0.25rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #00000066;
+  border-radius: 24px;
+  font-size: 1rem;
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: #fc8a06;
+  color: white;
+  border: none;
+  border-radius: 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #cccccc;
+}
+
+button:hover:not(:disabled) {
+  background-color: #e57b05;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+}
+
+.signupLink {
+  color: #fc8a06;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.imageContainer {
+  width: 816px;
+  height: 1,044px;
+  position: relative;
+  margin: 32px;
+  display: flex;
+  justify-content: center;
+  opacity: 1;
+}
+
+.imageContainer img {
+  width: 80%;
+  border-radius: 24px;
+}
+
+
+
+
+/* Mobile View (max-width: 480px) */
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Adjust height for stacking layout */
+    padding: 16px;
+    margin-bottom: 230px;
+  }
+
+  .formContainer {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 50px; /* Ensure space between form and footer */
+  }
+
+  .innerContainer {
+    width: 100%;
+    gap: 24px;
+  }
+
+  form {
+    gap: 0.75rem;
+  }
+
+  input {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  button {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  header h2 {
+    font-size: 1.5rem;
+  }
+
+  header p {
+    font-size: 0.9rem;
+  }
+
+  .imageContainer {
+    display: none; /* Hide the image container */
+  }
+}
+
+
+
+
+/* Tablet View (max-width: 768px) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Adjust height for stacking layout */
+    padding: 24px;
+    margin-bottom: 230px;
+  }
+
+  .formContainer {
+    width: 70%; /* Reduce width for better spacing */
+    margin: 0;
+  }
+
+  .innerContainer {
+    width: 100%;
+    gap: 32px;
+  }
+
+  form {
+    gap: 1rem;
+  }
+
+  input {
+    padding: 0.65rem 0.85rem;
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 0.65rem 0.85rem;
+    font-size: 1rem;
+  }
+
+  header h2 {
+    font-size: 1.6rem;
+  }
+
+  header p {
+    font-size: 0.95rem;
+  }
+
+  .imageContainer {
+    width: 50%; 
+    margin: 16px;
+    display: none;
+  }
+
+  
+}
